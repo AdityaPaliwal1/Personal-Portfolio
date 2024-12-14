@@ -1,0 +1,85 @@
+.skillcontainer{
+    margin: 4rem 0rem 2rem 0;
+
+    .skillhead{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        padding: 1rem 2rem 1rem 2rem;
+
+        >h1{
+            font: 900 4.8rem "Open Sans";
+                background: -webkit-linear-gradient($main, #3300ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 10px 0;
+                line-height: 5rem;
+        }
+        >img{
+            width: 15rem;
+            margin: 0 1rem;
+            position: absolute;
+            z-index: 100;
+            bottom: 0px;
+            right: 20px;
+        }
+    }
+    .skillcontent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 83vw;
+        margin: 1rem auto;
+        padding: 1rem;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        border-radius: 20px;
+
+        .skill{
+            margin: 1.4rem;
+            >img{
+                width: 4rem;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: translateY(-0.9rem);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .skillcontainer{
+
+        .skillhead {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            padding: 1rem 2rem 1rem 2rem;
+    
+            >h1 {
+                font: 900 15vw "Open Sans";
+            }
+    
+            >img {
+                width: 10rem;
+                margin: 0 1rem;
+                position: absolute;
+                z-index: 100;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+                .skillcontent {
+                    .skill {
+                        margin: 0.8rem;
+                        >img {
+                            width: 3.4rem;
+                        }
+                    }
+                }
+    }
+}
